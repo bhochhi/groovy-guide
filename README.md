@@ -1,19 +1,26 @@
+
+### [Unit testing Groovy](http://docs.groovy-lang.org/next/html/documentation/core-testing-guide.html)
+
 ### Basic comparison with Java syntax.
 
+
+**Java**
 ```java
-package com.codewithme.java;
+package com.codewithme.pkg;
 
 import java.util.Date;
 
 public class ClassName{
 	
-  private String prop; 
+  private String prop;
+  
+  int protectedProp;
 	
 	public Classname(){
 		
 	}
 	
-	public void method(String args) throws Exception{
+    public void method(String args) throws Exception{
 		OtherClass otherClass = new OtherClass();
     Date d = new Date();
 		otherClass.otherMethod(passphrase);	
@@ -30,23 +37,20 @@ public class ClassName{
 }
 ```
 
+**Groovy**
 ```groovy
-package com.codewithme.java
+package com.codewithme.pkg
 
 import org.springframework.beans.factory.annotation.Autowired
 
 public class ClassName{
 	
   private String prop
-	
-	public Classname(){
 		
-	}
-	
-	def method(String args) throws Exception{
+	def method(String args) throws Exception{  //access modifier means public
 		OtherClass otherClass = new OtherClass()
     d = new Date()
-		otherClass.otherMethod(passphrase)
+		otherClass.otherMethod(passphrase)	
 	}
 
 }

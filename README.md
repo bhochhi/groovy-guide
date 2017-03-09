@@ -49,9 +49,8 @@ public class ClassName{
 		
 	def method(String args) throws Exception{  //access modifier means public
 		OtherClass otherClass = new OtherClass()
-    d = new Date()
+  	d = new Date()
 		otherClass.otherMethod(passphrase)	
 	}
-
 }
 ```
